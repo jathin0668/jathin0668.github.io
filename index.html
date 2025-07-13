@@ -3,73 +3,171 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weekend Hunger | Copy by Jatin</title>
+  <title>Jatin Verma | Copywriter Portfolio</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1604909052844-0ee674b1e2e3?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
-      background-size: cover;
+      margin: 0;
+      background: #111;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    }
+
+    nav {
+      background: #000;
+      padding: 15px;
       text-align: center;
-      backdrop-filter: brightness(0.6);
+    }
+    nav a {
+      color: #ffb703;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    h1 {
-      font-size: 3rem;
-      max-width: 80%;
-      margin-bottom: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 10px;
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: #111;
     }
-
-    p {
-      font-size: 1.2rem;
-      color: #f0f0f0;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 10px 20px;
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      color: #ccc;
+    }
+    .cta {
+      background: #ffb703;
+      color: #000;
+      padding: 12px 24px;
+      border: none;
       border-radius: 6px;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+    }
+
+    .card h3 {
+      color: #ffb703;
+    }
+
+    .contact-form {
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #222;
+      color: #fff;
+      border: 1px solid #444;
+      border-radius: 4px;
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
+      padding: 20px;
+      background: #000;
+      text-align: center;
       font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .cta {
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #ffb703;
-      color: #000;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .cta:hover {
-      background-color: #ffaa00;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>“Weekend hunger? We deliver even your cravings. 🍟”</h1>
-  <p>— Ad caption crafted by Jatin Verma</p>
 
-  <button class="cta" onclick="alert('Imagine this takes you to the food app 🚀')">Order Now</button>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <footer>
-    © 2025 Jatin Verma | Freelance Copywriter • @jatinwrites
-  </footer>
+<header id="home">
+  <h1>Hi, I'm Jatin Verma</h1>
+  <p>A 16-year-old passionate copywriter who turns words into action ✍️</p>
+  <a href="mailto:jatin@example.com" class="cta">Hire Me</a>
+</header>
+
+<section id="about">
+  <h2>👋 About Me</h2>
+  <p>I’m Jatin, a creative mind passionate about writing impactful ads and brand content. Even at 16, I’ve been practicing ad captions, creative copy, and learning from the best marketers out there!</p>
+</section>
+
+<section id="services">
+  <h2>🛠️ My Services</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Ad Copywriting</h3>
+      <p>Catchy, creative, and clear ad captions that convert and connect.</p>
+    </div>
+    <div class="card">
+      <h3>Instagram Captions</h3>
+      <p>Witty, relatable lines for brands and creators to grow engagement.</p>
+    </div>
+    <div class="card">
+      <h3>Product Descriptions</h3>
+      <p>Writing that makes people click "Add to Cart" — simple and effective.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>📝 Portfolio</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Food App Ad</h3>
+      <p>“Weekend hunger? We deliver even your cravings. 🍟”</p>
+    </div>
+    <div class="card">
+      <h3>Fitness Brand</h3>
+      <p>“Don’t chase results — outrun them. 🏃‍♂️🔥”</p>
+    </div>
+    <div class="card">
+      <h3>Online Course</h3>
+      <p>“Learn in 30 days what schools forgot in 10 years.”</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>📬 Contact Me</h2>
+  <div class="contact-form">
+    <form action="https://formspree.io/f/mnqegzlp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Jatin Verma | Young Creative Copywriter | Built with ❤️
+</footer>
+
 </body>
 </html>
+
